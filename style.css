@@ -1,24 +1,51 @@
 /*header*/
 
 .navbar {
-    height: 165px;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    font-size: 18px;
-    font-weight: 600; 
+    background-color: #222;
+    padding: 16px 0;
 }
 
-.navbar .links {
-    display: flex;
-    width: 100%;
-    max-width: 430px;
+.content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
-.align-center {
-    align-items: center !important;
+.nav {
+    display: flex;
 }
 
 .justify-between {
-    justify-content: space-between !important;
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.links {
+    display: flex;
+    gap: 24px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
 }
