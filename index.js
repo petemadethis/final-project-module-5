@@ -4,7 +4,7 @@ async function getMovies() {
         const response = await fetch("https://www.omdbapi.com/?apikey=650d264a&s=fast");
         const data = await response.json();
         console.log(data)
-        debugger;
+        
         if (!data.Search) {
             moviesContainer.textContent = "No movies found.";
             return;
