@@ -23,10 +23,12 @@
     <section>
     <h1> Check Out Our fast Movies</h1>
     <h2>Search for Movies</h2>
-    <form id="search-form">
+    <form id="search-form" onsubmit="showSpinner(event)">
         <div class="input_wrapper">
         <input type="text" id="search-input" placeholder="Search by Title"/>
-        <button type="submit" class="loading">Search</button>
+        <button type="submit" class="loading">Search
+           <i class="fa-solid fa-spinner" id="spinner" style="display: none;"></i>
+        </button>
         </div>
     </form>
     </section>

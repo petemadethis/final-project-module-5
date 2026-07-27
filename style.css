@@ -81,6 +81,10 @@ section {
     padding-left: 25px;
 }
 
+.loading {
+    position: relative;
+}
+
 button.loading {
     background-color: black;
     cursor: no-drop;
@@ -93,7 +97,19 @@ button {
     color: #fff;
     border-radius: 20px;
     transition: all .25s ease;
+}
 
+#spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .search-form {
