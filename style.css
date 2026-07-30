@@ -5,20 +5,15 @@ p {
 }
 
 .navbar {
-  width: 100%;
-  max-width: 1200px;
+ width: 100%;
   background-color: #222;
-  padding: 0 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0;
 }
 
 .content-wrapper {
-  max-width: 1000px;
+  max-width: 1200px; /* Limits content width inside full-width navbar */
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 16px 24px;
+  width: 100%;
 }
 
 .nav {
@@ -45,6 +40,19 @@ img {
 .links {
   display: flex;
   gap: 24px;
+}
+
+.menu-button {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    display: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 .links a {
@@ -156,6 +164,16 @@ button {
 
 /* mobile device, cellphones, tablet, */
 
-@media 
+@media (max-width: 550px) {
+   .links {
+    display: none;}
+}
+
+@media (max-width: 550px) {
+    .menu-button {
+        display: block;
+    }
+}
+
 
 
