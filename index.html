@@ -1,49 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/909aaca56e.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6487f0a3d4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Movies</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="navbar">
-    <div class="nav content-wrapper justify-between align-center">
-     <div class="logo">
-      <img src="/logo.final.jpg" class="logo"></div>
-      <div class="links align-center justify-between">
-        <a>Home</a>
-        <a>Movies</a>
-        <a>Search</a>
-     </div>
-    </div>
+      <div class="nav content-wrapper justify-between align-center">
+        <div class="logo">
+          <img src="/logo.final.jpg" class="logo" />
+        </div>
+        <div class="links align-center justify-between">
+          <a>Home</a>
+          <a>Movies</a>
+          <a>Search</a>
+        </div>
+      </div>
     </header>
     <section>
-    <h1> Check Out Our fast Movies</h1>
-    <h2>Search for Movies</h2>
-    <form id="search-form" onsubmit="showSpinner(event)">
+      <h1>Check Out Our fast Movies</h1>
+      <h2>Search for Movies</h2>
+      <form id="search-form" onsubmit="getMovies(event)">
         <div class="input_wrapper">
-        <input type="text" id="search-input" placeholder="Search by Title"/>
-        <button type="submit" class="loading">Search
-           <i class="fa-solid fa-spinner" id="spinner" style="display: none;"></i>
-        </button>
+          <input type="text" id="search-input" placeholder="Search by Title" />
+          <button type="submit" class="loading">
+            <p class="search__text">Search</p>
+            <i class="fa-solid fa-spinner" id="spinner"></i>
+          </button>
         </div>
-    </form>
+      </form>
     </section>
     <main>
-     <div id="movie_section">
-      <div class="container">
-      <div class="row"> 
-      <div id="movies">Loading movies...</div>
+      <div id="movie_section">
+        <div class="container">
+          <div class="row">
+            <div id="movies">Loading movies...</div>
+          </div>
+        </div>
       </div>
-      </div>
-     </div>  
-    <footer>
-
-    </footer>
+      <footer></footer>
     </main>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
