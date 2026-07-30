@@ -5,8 +5,13 @@ p {
 }
 
 .navbar {
+  width: 100%;
+  max-width: 1200px;
   background-color: #222;
-  padding: 16px 0;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 0;
 }
 
@@ -18,7 +23,6 @@ p {
 
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -31,12 +35,10 @@ p {
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  width: 160px;
 }
 
-.logo img {
-  width: 60px;
+img {
   height: auto;
 }
 
@@ -154,6 +156,6 @@ button {
 
 /* mobile device, cellphones, tablet, */
 
-
+@media 
 
 
