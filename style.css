@@ -10,7 +10,7 @@ p {
 }
 
 .content-wrapper {
-  max-width: 1200px; /* Limits content width inside full-width navbar */
+  max-width: 1200px; 
   margin: 0 auto;
   padding: 16px 24px;
   width: 100%;
@@ -37,9 +37,12 @@ img {
   height: auto;
 }
 
-.links {
-  display: flex;
-  gap: 24px;
+#nav-links {
+    display: flex; 
+}
+
+#nav-links.open {
+    display: flex;
 }
 
 .menu-button {
@@ -48,7 +51,8 @@ img {
     text-align: center;
     border: none;
     color: #fff;
-    display: none;
+    display: block;
+
 }
 
 button {
@@ -165,14 +169,26 @@ button {
 /* mobile device, cellphones, tablet, */
 
 @media (max-width: 550px) {
-   .links {
-    display: none;}
-}
+   #nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    padding: 16px 0;
+    text-align: center;
+    gap: 16px;
+    }
 
-@media (max-width: 550px) {
     .menu-button {
         display: block;
     }
+  
+     .nav {
+    position: relative;
+  }
 }
 
 

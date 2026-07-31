@@ -3,8 +3,6 @@ const searchText = document.querySelector(".search__text");
 const moviesContainer = document.getElementById("movies");
 const searchInput = document.getElementById("search-input");
 
-console.log(spinner.style.display);
-
 async function getMovies(event) {
   let search = null;
   if (event) {
@@ -41,6 +39,10 @@ async function getMovies(event) {
   }
 }
 getMovies();
+
+function openMenu() {
+  document.getElementById("nav-links").classList.toggle("open");
+}
 
 function renderMovies(data) {
   moviesContainer.innerHTML = "";
