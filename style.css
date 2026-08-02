@@ -38,7 +38,10 @@ img {
 }
 
 #nav-links {
-    display: flex; 
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 16px 0;
 }
 
 #nav-links.open {
@@ -52,6 +55,9 @@ img {
     border: none;
     color: #fff;
     display: block;
+    width: auto; 
+    margin-left: 0;
+    display: none;
 
 }
 
@@ -59,7 +65,7 @@ button {
     cursor: pointer;
 }
 
-.links a {
+#nav-links a {
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -132,12 +138,12 @@ button {
   }
 }
 
-.search-form {
+#search-form {
   display: flex;
   margin-top: 20px;
 }
 
-.search-input {
+#search-input {
   margin-right: 10px;
   padding: 10px;
 }
@@ -192,15 +198,15 @@ button {
 
     h1 {
     font-size: 40px;
-  }
+   }
 
     h2 {
         font-size: 26px;
     }
-}
 
-.input_wrapper {
+    .input_wrapper {
     flex-direction: column;
+    }  
 }
 
 
