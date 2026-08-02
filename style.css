@@ -172,6 +172,29 @@ button {
   object-fit: cover;
 }
 
+/* Footer */
+
+footer {
+    background-color:black;
+}
+
+.container {
+    padding: 56px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+
 /* mobile device, cellphones, tablet, */
 
 @media (max-width: 550px) {
